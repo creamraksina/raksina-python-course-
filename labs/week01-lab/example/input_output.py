@@ -13,6 +13,8 @@ age = int(age_string)  # Convert string to integer
 print("You are", age, "years old")
 print("Next year you will be", age + 1, "years old")
 
+#ลองเอามาเล่นเป็นเปลงจาก ค.ศ เป็น พ.ศ
+
 # Exercise 3: Multiple Inputs
 print("\n=== Exercise 3: Multiple Inputs ===")
 first_name = input("Enter your first name: ")

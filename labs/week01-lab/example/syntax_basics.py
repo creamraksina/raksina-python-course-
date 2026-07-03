@@ -11,7 +11,7 @@ height = 5.8  # Replace with your height in feet
 is_student = True  # True or False
 
 # Print all variables
-print("Name:", name)
+print("Name:", name) 
 print("Age:", age)
 print("Height:", height)
 print("Is Student:", is_student)
@@ -23,8 +23,10 @@ my_integer = 42
 my_float = 3.14
 my_boolean = False
 
+my_float = 5 #เปลี่ยนจาก float เป็น int ได้
+
 # Use type() to see the data type
-print("Type of my_string:", type(my_string))
+print("Type of my_string:", type(my_string)) #ฟังค์ชั่น type คือใช้ถาม type
 print("Type of my_integer:", type(my_integer))
 print("Type of my_float:", type(my_float))
 print("Type of my_boolean:", type(my_boolean))
@@ -38,7 +40,7 @@ full_name = first_name + " " + last_name
 print("Full name:", full_name)
 
 # String length
-print("Length of full name:", len(full_name))
+print("Length of full name:", len(full_name)) #len ถามหาความยาว
 
 # Exercise 4: Numbers and Arithmetic
 # Create two numbers and perform basic operations
@@ -49,9 +51,9 @@ print("Addition:", num1 + num2)
 print("Subtraction:", num1 - num2)
 print("Multiplication:", num1 * num2)
 print("Division:", num1 / num2)
-print("Integer Division:", num1 // num2)
-print("Remainder (Modulo):", num1 % num2)
-print("Power:", num1 ** num2)
+print("Integer Division:", num1 // num2) # ใช้ // เพื่อใช้ให้หาแค่ int
+print("Remainder (Modulo):", num1 % num2) #เอาเศษ
+print("Power:", num1 ** num2) #ยกกำลัง
 
 # Exercise 5: Variable Reassignment
 # Start with a variable and change its value
@@ -77,16 +79,16 @@ print("a =", a, "b =", b, "c =", c)
 # Complete the following assignments:
 
 # String variable containing your favorite color
-favorite_color = 
+favorite_color = "blue"
 
 # Integer variable with the current year
-current_year = 
+current_year = "2026"
 
 # Float variable with your favorite number (with decimal)
-favorite_number = 
+favorite_number = "85"
 
 # Boolean variable indicating if you like pizza
-likes_pizza = 
+likes_pizza = "Yes"
 
 # Print all variables with descriptive messages
 print("My favorite color is:", favorite_color)
