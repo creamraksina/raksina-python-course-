@@ -9,11 +9,12 @@ print("=" * 50)
 a = 15
 b = 4
 
-print(f"a = {a}, b = {b}")
+print(f"a = {a}, b = {b}") #**ใช้บ่อย 
 print()
 
+
 # Addition (+)
-result_add = a + b
+result_add = a + b 
 print(f"Addition:       {a} + {b} = {result_add}")
 
 # Subtraction (-)
@@ -29,7 +30,7 @@ result_div = a / b
 print(f"Division:       {a} / {b} = {result_div}")
 
 # Floor Division (//)
-result_floor = a // b
+result_floor = a // b #หารเอาเศษ
 print(f"Floor Division: {a} // {b} = {result_floor}")
 
 # Modulo (%)
@@ -60,7 +61,7 @@ print(f"{num1} - {num2} = {num1 - num2}")
 print(f"{num1} * {num2} = {num1 * num2}")
 
 # ตรวจสอบการหารด้วยศูนย์
-if num2 != 0:
+if num2 != 0: #ถ้า num2 ไม่เทากับ 0 ให้เข้าสูตร # == คำตอบจะเป็นแค่ใช่หรือไม่
     print(f"{num1} / {num2} = {num1 / num2}")
     print(f"{num1} // {num2} = {num1 // num2}")
     print(f"{num1} % {num2} = {num1 % num2}")
@@ -74,6 +75,17 @@ print()
 # =============================================================================
 # DEMO 3: Operator Precedence
 # =============================================================================
+
+#ลำดับความสำคัญของเครื่องหมายทางคณิตศาสตร์
+# ()
+# **,^ คือการยกกำลัง
+# %mod คือการหารเอาเศษ ,\ คือการหารเอาส่วน ,* คือการคูณ , / คือการหาร 
+#  + คือการบวก , - คือการลบ
+#<, >, <=, >=, ==, != คือการเปรียบเทียบ
+# not คือการปฏิเสธเงื่อนไข
+# and คือการเชื่อมเงื่อนไขทั้งสองอย่าง
+# or คือการเชื่อมเงื่อนไขอย่างใดอย่างหนึ่ง
+
 
 print("=" * 50)
 print("DEMO 3: Operator Precedence")
@@ -124,6 +136,8 @@ width = float(input("Enter rectangle width: "))
 
 area = length * width
 perimeter = 2 * (length + width)
+#output มีประโยนช์ที่สามารถส่ง output ไปบันทึกยังไฟล์ ส่งกลับไปให้ผู้ใช้
+#Program ต้องมีคนค่อยปกป้องโดยมีการยืนยันกับ User ผ่าน email ที่มีตัวตนจริงๆ เพื่อป้องกันการมั่วทรงของผู้ใช้
 
 print(f"Area = length * width = {length} * {width} = {area}")
 print(f"Perimeter = 2 * (length + width) = 2 * ({length} + {width}) = {perimeter}")
