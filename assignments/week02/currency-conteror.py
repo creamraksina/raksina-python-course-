@@ -5,15 +5,15 @@ print("-"*50)
 print("Plese choose conversion direction ")
 print("1.THB to USD")
 print("2.USD to THB")
-choice = int(input("Enter your choice : "))
+choice = (input("Enter your choice : "))
 
-if choice == 1:
+if choice == "1":
     THB = float(input("Enter amount to convert (THB) : "))
     USD = THB / 35.5
     print(f"USD = {THB} / 35.5")
     print(f"USD = {USD:.2f}")
     print(f"{THB:.2f} THB to USD is {USD:.2f} USD.")
-elif choice == 2:
+elif choice == "2":
     USD = float(input("Enter amount to convert (USD) : "))
     THB = USD * 35.5
     print(f"THB = {USD} * 35.5")
