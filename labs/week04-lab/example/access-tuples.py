@@ -9,8 +9,10 @@ print(f"First 3: {colors[0:3]}")        # ('red', 'green', 'blue')
 print(f"Last 2: {colors[-2:]}")         # ('yellow', 'purple')
 print(f"Every 2nd: {colors[::2]}")      # ('red', 'blue', 'purple')
 
-# Tuple unpacking
+# Tuple unpacking  การสกัดข้อมูลออกมา
 point = (10, 20)
+x = point[0]
+y = point[1]
 x, y = point
 print(f"x: {x}, y: {y}")                # x: 10, y: 20
 
@@ -22,5 +24,7 @@ print(f"Name: {name}, Age: {age}, Job: {job}")
 # Swapping variables using tuples
 a = 5
 b = 10
+#temp = (5,10) # การพยายามสลับค่า tuple
+#b , a = temp 
 a, b = b, a
 print(f"After swap: a = {a}, b = {b}")  # a = 10, b = 5

@@ -1,6 +1,6 @@
 # Empty tuple
-empty_tuple = ()
-another_empty_tuple = tuple()
+empty_tuple = () #สร้าง tuple ใช้ () สร้างยังไงต้องไว้แบบนั้น แก้ไขไม่ได้ 
+another_empty_tuple = tuple() # ถ้าจะเปลี่ยนแปลง tuple ต้องแปลงมันมาเป็นลิส ซึ่งไม่ควร!!
 
 # Tuple with values
 coordinates = (10, 20)
@@ -13,7 +13,7 @@ not_a_tuple = (42)    # This is just an integer
 
 # Tuple from list
 my_list = [1, 2, 3, 4]
-my_tuple = tuple(my_list)
+my_tuple = tuple(my_list) # การแปลง list เป็น tople
 
 # Tuple from string
 char_tuple = tuple("hello")  # ('h', 'e', 'l', 'l', 'o')

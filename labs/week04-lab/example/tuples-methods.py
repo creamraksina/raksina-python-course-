@@ -11,7 +11,7 @@ print(f"Count of 2: {numbers.count(2)}") # 3
 print(f"Index of 3: {numbers.index(3)}")  # 2
 
 # Check membership
-print(f"Is 'red' in colors? {'red' in colors}")      # True
+print(f"Is 'red' in colors? {'red' in colors}")      # True     การถามว่ามี red ใน colors in list ไหม 
 print(f"Is 'yellow' in colors? {'yellow' in colors}") # False
 
 # Min, max, sum (for numeric tuples)
@@ -28,8 +28,8 @@ print(f"Back to tuple: {new_tuple}")
 # Concatenation and repetition
 tuple1 = (1, 2, 3)
 tuple2 = (4, 5, 6)
-combined = tuple1 + tuple2
+combined = tuple1 + tuple2 #การต่อ
 print(f"Combined: {combined}")           # (1, 2, 3, 4, 5, 6)
 
-repeated = tuple1 * 3
+repeated = tuple1 * 3 #เขียนซ้ำ 3 ครั้ง
 print(f"Repeated: {repeated}")           # (1, 2, 3, 1, 2, 3, 1, 2, 3)

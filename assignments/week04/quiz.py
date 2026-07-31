@@ -57,8 +57,8 @@ def number_operations():
     print(f"Original numbers: {numbers}")
     
     # Create filtered lists
-    even_numbers = # Your code here
-    odd_numbers = # Your code here
+    #even_numbers = # Your code here
+    #odd_numbers = # Your code here
     
     # Calculate average
     average = # Your code here
