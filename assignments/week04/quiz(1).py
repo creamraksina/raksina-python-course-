@@ -21,9 +21,8 @@ def personal_info_manager():
     
     # Your code here
     name = input("What is your name? : ")
-    age = int(input("How old are you? : "))
-    city = input("Where do you live in city? : ")
-    
+    age = int(input("How old are you? :"))
+    city = input("Where do you live in city? ")
 
 if __name__ == "__main__":
     personal_info_manager()
