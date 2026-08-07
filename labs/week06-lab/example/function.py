@@ -7,8 +7,8 @@
 # =============================================================================
 print("=== PART 1: BASIC FUNCTIONS ===")
 
-# Example 1: Simple function without parameters
-def say_hello():
+# Example 1: Simple function without parameters ไม่ต้องการ input  นำเข้า
+def say_hello():# พารามิเตอร์ คือ input ที่เราจะเอามาใส่
     """A simple function that prints a greeting"""
     print("Hello, World!")
     print("Welcome to Python functions!")
@@ -29,7 +29,7 @@ draw_separator()
 print()
 
 # =============================================================================
-# PART 2: FUNCTIONS WITH PARAMETERS
+# PART 2: FUNCTIONS WITH PARAMETERS input ของโปรแกรมย่อยนี้
 # =============================================================================
 print("\n=== PART 2: FUNCTIONS WITH PARAMETERS ===")
 
@@ -93,11 +93,11 @@ def get_circle_info(radius):
     pi = 3.14159
     area = pi * radius * radius
     circumference = 2 * pi * radius
-    return area, circumference
+    return area, circumference #คำนวณเสร็จ Return ค่าอะไรกลับไป
 
 print("Circle calculations:")
 radius = 5
-area, circumference = get_circle_info(radius)
+area, circumference = get_circle_info(radius) # บรรทัดโค้ดนี้เป็การบอกว่าจัวแปร area , circumference มีค่าเท่ากันกับในฟังก์ชั่น
 print(f"Circle with radius {radius}:")
 print(f"Area: {area:.2f}")
 print(f"Circumference: {circumference:.2f}")
@@ -116,6 +116,11 @@ print("Using return values in expressions:")
 result = multiply(4, 5) + square(3)
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
 print()
+
+#   จงหาผลรันโปรแกรมใน  Example 3 : คำนวณ
+"""
+multiply(4, 5) + square(3) = 20 + 9 = 29
+"""
 
 # =============================================================================
 # PART 4: DEFAULT PARAMETERS

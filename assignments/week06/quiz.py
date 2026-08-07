@@ -7,7 +7,10 @@ return ข้อความต้อนรับในรูปแบบ string
 """
 def welcome_message(name, course):
     # Your Problem 1 solution
+    print(f"Welome {name}! to {course}")
     pass
+
+welcome_message("cream","Python")
 
 """ เขียน function ชื่อ calculate_circle ที่มีคุณสมบัติดังนี้:
 
@@ -18,6 +21,9 @@ return dictionary ที่มี area และ circumference
 
 def calculate_circle(radius):
     # Your Problem 2 solution
+    pi = 3.14159
+    area = pi * radius * radius
+    circumference = 2 * pi * radius
     pass
 
 """ เขียน function ชื่อ create_user_profile ที่มีคุณสมบัติดังนี้:
@@ -30,7 +36,21 @@ return string ที่จัดรูปแบบข้อมูลผู้ใ
 
 def create_user_profile(username, age=18, premium=False):
     # Your Problem 3 solution
+    print("Profile")
+    print()
+    
+    type = "Standard User"
+    
+    if premium == True :
+        type = "Premium User"
+        
+    print(f"Username :{username}    Age :{age}  Premium :{type}")
+    return 
     pass
+create_user_profile("Boonchoo",40)
+create_user_profile("Manee")
+create_user_profile("Piti",23,True)
+
 
 """ เขียน function ชื่อ analyze_scores ที่มีคุณสมบัติดังนี้:
 
