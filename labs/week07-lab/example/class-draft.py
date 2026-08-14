@@ -1,4 +1,4 @@
-class ClassName:
+class ClassName: #คิดว่าเรื่อง Record
     """Class docstring"""
     
     def __init__(self, parameters):
@@ -12,4 +12,4 @@ class ClassName:
 
 myObj = ClassName(parameters)
 print(myObj.attribute)
-resultFromMethod = myObj.method_name()
+resultFromMethod = myObj.method_name()             

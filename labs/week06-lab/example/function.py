@@ -179,7 +179,7 @@ def demonstrate_scope():
     print(f"Inside function - Local: {local_message}")
     
     # Modifying global variable (need global keyword)
-    global counter
+    global counter #พยายามเข้าถึงตัวแปรระดับ Global
     counter += 1
     print(f"Counter inside function: {counter}")
 
@@ -245,7 +245,7 @@ print()
 def celsius_to_fahrenheit(celsius):
     """Converts Celsius to Fahrenheit"""
     fahrenheit = (celsius * 9/5) + 32
-    return fahrenheit
+    return fahrenheit #Return คือการเคลียร์ให้มัรเป็น 0 แล้วทำให้มันสามารถวนใช้ได้เรื่อยๆ
 
 def fahrenheit_to_celsius(fahrenheit):
     """Converts Fahrenheit to Celsius"""
