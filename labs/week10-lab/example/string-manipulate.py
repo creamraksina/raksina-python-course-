@@ -6,12 +6,12 @@
 # ===========================
 
 print("=== STRING CREATION ===")
-# Different ways to create strings
-name = "India"
+# Different ways to create strings 
+name = "India" 
 graduate = 'B.E.'
-multiline = """This is a
+multiline = """This is a 
 multiline string
-example"""
+example""" # ถ้าใช้คู่กับ  = ก็เป็นคำสั่งนึ่งที่ใช้สร้าง Str ได้
 
 print(f"name = {name}")
 print(f"graduate = {graduate}")
@@ -28,8 +28,8 @@ print(f"Hello {name}")
 
 # Converting string to number
 apple = input("Enter a number: ")
-try:
-    x = int(apple) - 10
+try: #อันใหม่ 
+    x = int(apple) - 10 # พยายามแปลง เลข str เป็น int
     print(f"Result: {x}")
 except ValueError:
     print("Please enter a valid number!")
@@ -41,7 +41,7 @@ except ValueError:
 print("\n=== STRING INDEXING ===")
 fruit = 'banana'
 print(f"fruit = {fruit}")
-print(f"fruit[1] = {fruit[1]}")  # 'a'
+print(f"fruit[1] = {fruit[1]}")  # 'a' การเข้าถึงตัว Str คือข้าไปหาอักขระ
 
 n = 3
 w = fruit[n - 1]  # fruit[2]
@@ -63,7 +63,7 @@ message = "hello"
 index = 0
 
 print("Method 1: Using for loop with enumerate")
-for i, char in enumerate(message):
+for i, char in enumerate(message): # enumerate อักษขระ
     print(f"message[{i}] = {char}")
 
 print("\nMethod 2: Manual indexing")
@@ -82,11 +82,11 @@ str2 = 'World!'
 
 # Concatenation
 result = str1 + str2
-print(f"str1 + str2 = {result}")
+print(f"str1 + str2 = {result}")  # output : HelloWorld!
 
 # Multiplication
 repeat = str1 * 3
-print(f"str1 * 3 = {repeat}")
+print(f"str1 * 3 = {repeat}") # output : HelloHelloHello
 
 # ===========================
 # 6. APPENDING STRINGS
@@ -95,7 +95,7 @@ print(f"str1 * 3 = {repeat}")
 print("\n=== APPENDING STRINGS ===")
 greeting = 'hello'
 name = input("Enter your name: ")
-greeting += name
+greeting += name #+= เป็นการนำมาต่อ
 greeting += ". welcome to pune"
 print(greeting)
 
@@ -107,7 +107,7 @@ print("\n=== ITERATING THROUGH STRING ===")
 count = 0
 text = 'Hello World'
 for letter in text:
-    if letter == 'l':
+    if letter == 'l': #นับ l เล็กในคำว่า Hello Word
         count += 1
 print(f"{count} letters 'l' found in '{text}'")
 
@@ -146,16 +146,16 @@ print(f"id of str3 is {id(str3)}")  # Same ID as current str1
 
 print("\n=== ESCAPE CHARACTERS ===")
 print("New line example:")
-print("Line 1\nLine 2")
+print("Line 1\nLine 2") #\n ขึ้นบรรทัดใหม่
 
 print("Tab example:")
-print("Column1\tColumn2\tColumn3")
+print("Column1\tColumn2\tColumn3") # \t Tab
 
 print("Backslash example:")
-print("Path: C:\\Users\\Python")
+print("Path: C:\\Users\\Python") # จะแสดงแค่ \ เดียว
 
 print("Quote examples:")
-print('He said, "What\'s there?"')
+print('He said, "What\'s there?"') # จะไม่แสดง \ เลย
 print("He said, \"What's there?\"")
 print('''He said, "What's there?"''')
 
@@ -200,42 +200,45 @@ print(str3)
 print("\n=== STRING METHODS ===")
 text = "welcome to the world of python"
 
-# Case methods
+# Case methods เปลี่ยนลักษณะการแสดงผลเฉยๆ
 print(f"Original: {text}")
-print(f"Upper: {text.upper()}")
-print(f"Lower: {text.lower()}")
-print(f"Title: {text.title()}")
-print(f"Capitalize: {text.capitalize()}")
+print(f"Upper: {text.upper()}") 
+print(f"Lower: {text.lower()}") 
+print(f"Title: {text.title()}") # ใหญ่แค่ตัวหน้า
+print(f"Capitalize: {text.capitalize()}") # ทุกคำในนี้ตัวแรกจะเป็นตัวใหญ่
 
 # Search methods
-print(f"Find 'world': {text.find('world')}")
-print(f"Count 'o': {text.count('o')}")
-print(f"Starts with 'welcome': {text.startswith('welcome')}")
-print(f"Ends with 'python': {text.endswith('python')}")
+print("\n=== STRING METHODS ===")
+text = "welcome to the world of python" #ใน text มีคำว่า world ถ้ามีอยู่ index ที่เท่าไหร่ 
+print(f"Find 'world': {text.find('world')}") # 15  ถ้าหาไม่เจอ find() จะคืนค่า -1
+print(f"Count 'o': {text.count('o')}") # 5 count() → นับว่ามีกี่ตัว
+print(f"Starts with 'welcome': {text.startswith('welcome')}") #True startswith() → เริ่มต้นด้วยคำนี้ไหม?
+print(f"Ends with 'python': {text.endswith('python')}") #True endswith() → ลงท้ายด้วยคำนี้ไหม?
 
 # Modification methods
-print(f"Replace 'python' with 'java': {text.replace('python', 'java')}")
-words = text.split()
-print(f"Split into words: {words}")
-print(f"Join with '-': {'-'.join(words)}")
+print(f"Replace 'python' with 'java': {text.replace('python', 'java')}") #replace() → เปลี่ยนข้อความ text.replace(ของเก่า, ของใหม่)
+words = text.split() # split() → แยก String ออกเป็น List ⭐
+print(f"Split into words: {words}") 
+print(f"Join with '-': {'-'.join(words)}") # join() → เอา List มาต่อกัน
+# "-".join(words)หมายความว่า เอาข้อมูลใน words มาต่อกัน โดยใช้ - เป็นตัวคั่น
 
 # Validation methods
 test_str = "Hello123"
 print(f"\nValidation methods for '{test_str}':")
-print(f"isalnum(): {test_str.isalnum()}")
-print(f"isalpha(): {test_str.isalpha()}")
-print(f"isdigit(): {test_str.isdigit()}")
-print(f"isupper(): {test_str.isupper()}")
-print(f"islower(): {test_str.islower()}")
+print(f"isalnum(): {test_str.isalnum()}") #ตรวจสอบว่าเป็นตัวอักษรมั้ย หรือ ตัวเลขมั้ย
+print(f"isalpha(): {test_str.isalpha()}") #ตรวจสอบว่าเป็นตัวอักษรมั้ย 
+print(f"isdigit(): {test_str.isdigit()}") #ตรวจสอบว่าเป็นตัวเลขมั้ย
+print(f"isupper(): {test_str.isupper()}") #ตรวจสอบว่าเป็นตัวใหญ่มั้ย
+print(f"islower(): {test_str.islower()}") #ตรวจสอบว่าเป็นตัวเล็กมั้ย
 
 # ===========================
 # 13. ORD() AND CHR() FUNCTIONS
 # ===========================
-
+#เก็บข้อมูลตัวอักษรเป็นเลข ASCII
 print("\n=== ORD() AND CHR() FUNCTIONS ===")
 ch = 'R'
-print(f"ord('{ch}') = {ord(ch)}")
-print(f"chr(82) = {chr(82)}")
+print(f"ord('{ch}') = {ord(ch)}") #ord() ใช้สำหรับ แปลงตัวอักษร → ตัวเลขรหัส ASCII
+print(f"chr(82) = {chr(82)}") #chr() ใช้สำหรับ แปลงตัวเลข ASCII → ตัวอักษร
 
 # ASCII table example
 print("\nASCII values for A-Z:")
@@ -245,9 +248,8 @@ for i in range(65, 71):  # A-F
 # ===========================
 # 14. STRING COMPARISON
 # ===========================
-
-print("\n=== STRING COMPARISON ===")
-print("ASCII: A-Z = 65-90, a-z = 97-122")
+print("\n=== STRING COMPARISON ===") #เวลา Python เปรียบเทียบตัวอักษร จะดูจาก ค่า Unicode ของตัวอักษร
+print("ASCII: A-Z = 65-90, a-z = 97-122") #🧠 ทริกจำตัวพิมพ์ใหญ่ มีค่าน้อยกว่าตัวพิมพ์เล็ก เปรียบเทียบจากซ้ายไปขวา และหยุดทันทีเมื่อเจอตัวที่แตกต่างกัน
 
 comparisons = [
     ("'AbC' == 'AbC'", 'AbC' == 'AbC'),
@@ -266,11 +268,11 @@ for comparison, result in comparisons:
 # 15. STRING SLICING
 # ===========================
 
-print("\n=== STRING SLICING ===")
+print("\n=== STRING SLICING ===") #String Slicing = การตัด/หยิบบางส่วนของ String ออกมา
 text = "python"
 print(f"Original string: {text}")
 
-# Basic slicing
+# Basic slicing                     text[start:stop] → เอา start แต่ไม่เอา stop text[:] ไม่กำหนดทั้งจุดเริ่มและจุดจบ
 print(f"text[1:5] = {text[1:5]}")  # ytho
 print(f"text[:6] = {text[:6]}")    # python
 print(f"text[:] = {text[:]}")      # python
