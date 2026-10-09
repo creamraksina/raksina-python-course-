@@ -1,7 +1,8 @@
 class BankAccount:
     """A simple bank account class"""
-    
-    def __init__(self, account_holder, initial_balance=0):
+    #def = methond
+    #__init__ = constructor  คือ เมธอดพิเศษที่ถูกเรียกใช้งานโดยอัตโนมัติทันทีที่มีการสร้างอ็อบเจ็กต์จากคลาส (Class) หน้าที่หลักคือการกำหนดค่าเริ่มต้นห้กับตัวแปรหรือคุณสมบัติ
+    def __init__(self, account_holder, initial_balance=0): #
         self.account_holder = account_holder
         self.balance = initial_balance
         self.transaction_history = []
@@ -37,7 +38,7 @@ class BankAccount:
         else:
             return "No transactions yet"
 
-# Example usage
+# Example usageคือ การใช้งานคลาส หรือ การสร้างวัตถุจากคลาส
 account = BankAccount("John Doe", 1000)
 print(account.get_balance())
 print(account.deposit(500))

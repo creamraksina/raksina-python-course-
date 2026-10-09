@@ -1,4 +1,8 @@
-# Parent class (Base class)
+#ไฟล์นี้พูดถึงคุณสมบัติ OOP
+# Inheritance คือการสร้างคลาสใหม่ โดยเอาคลาสที่มีอยู่แล้วมาประยุกต์ใช้
+
+# Parent class (Base class)   คลาสแม่ = เป็นฐานเอาไปต่อยอด
+
 class Animal:
     
     def __init__(self, name, species):
@@ -15,8 +19,8 @@ class Animal:
     def make_sound(self):
         print(f"{self.name} makes a sound")
 
-# Child class (Derived class)
-class Dog(Animal):
+# Child class (Derived class) คลาสลูก
+class Dog(Animal): #ในวงเล็บ คือรับฐานมาจากแม่อันไหน ถ้าไม่มีในวงเล็บสามารถสันนิฐานได้ว่ามันเป็นตัวแม่
     def __init__(self, name, breed):
         super().__init__(name, "Canine")  # Call parent constructor
         self.breed = breed
@@ -41,7 +45,7 @@ class Cat(Animal):
     def climb_tree(self):
         print(f"{self.name} is climbing a tree")
 
-# Usage
+# Usage การใช้งาน
 dog = Dog("Max", "Golden Retriever")
 cat = Cat("Whiskers", "Orange")
 
