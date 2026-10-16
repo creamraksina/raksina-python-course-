@@ -24,6 +24,7 @@ Lowest: 19 C
 """
 def get_temperatures():
     temps = [31,30,28,32,33,31,30]
+    return temps
     #input_user = float(input("Enter Temperatures : "))
     #temp.append(input_user)
     
